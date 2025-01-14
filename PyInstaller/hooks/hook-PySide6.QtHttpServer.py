@@ -1,18 +1,88 @@
-#-----------------------------------------------------------------------------
-# Copyright (c) 2013-2023, PyInstaller Development Team.
-#
-# Distributed under the terms of the GNU General Public License (version 2
-# or later) with exception for distributing the bootloader.
-#
-# The full license is in the file COPYING.txt, distributed with this software.
-#
-# SPDX-License-Identifier: (GPL-2.0-or-later WITH Bootloader-exception)
-#-----------------------------------------------------------------------------
-
-from PyInstaller.utils.hooks.qt import add_qt6_dependencies
-
-hiddenimports, binaries, datas = add_qt6_dependencies(__file__)
-
-# This seems to be necessary on Windows; on other OSes, it is inferred automatically because the extension is linked
-# against the Qt6Concurrent shared library.
-hiddenimports += ['PySide6.QtConcurrent']
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>برگشت آنتن</string>
+	</dict>
+	<key>DDNAProfileProperties</key>
+	<dict>
+		<key>IsNewProfile</key>
+		<true/>
+		<key>PayloadType</key>
+		<string></string>
+		<key>PlatformFilters</key>
+		<array>
+			<string>ios</string>
+		</array>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>APNs</key>
+			<array>
+				<dict>
+					<key>AllowedProtocolMask</key>
+					<integer>1</integer>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>1</integer>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>1</integer>
+					<key>AuthenticationType</key>
+					<string>CHAP</string>
+					<key>DefaultProtocolMask</key>
+					<integer>1</integer>
+					<key>EnableXLAT464</key>
+					<true/>
+					<key>Name</key>
+					<string>mcinet</string>
+				</dict>
+				<dict>
+					<key>AllowedProtocolMask</key>
+					<integer>1</integer>
+					<key>AllowedProtocolMaskInDomesticRoaming</key>
+					<integer>1</integer>
+					<key>AllowedProtocolMaskInRoaming</key>
+					<integer>1</integer>
+					<key>AuthenticationType</key>
+					<string>PAP</string>
+					<key>DefaultProtocolMask</key>
+					<integer>1</integer>
+					<key>EnableXLAT464</key>
+					<true/>
+					<key>Name</key>
+					<string>mcinet</string>
+				</dict>
+			</array>
+			<key>PayloadDisplayName</key>
+			<string>Cellular</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.cellular.743E468A-10AF-49A9-B9EE-7D0A9DBD532F</string>
+			<key>PayloadType</key>
+			<string>com.apple.cellular</string>
+			<key>PayloadUUID</key>
+			<string>61e05c85-cfb6-4c4c-ba82-5c7948362e7d</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Faabric</string>
+	<key>PayloadIdentifier</key>
+	<string>saeedsMacBookAir.0FD047A9-0E3E-4F53-A328-CFC655E6CBA6</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>C3DD0241-9ABE-4868-9532-FECA2B196476</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>RemovalDate</key>
+	<date>2027-05-22T15:37:24Z</date>
+</dict>
+</plist>
